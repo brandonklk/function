@@ -16,10 +16,13 @@ main(){
 int numeroDeDivisores( int valor ){
 	int contador = 0;
 	int i;
-	if( valor !=0 ){
-		for (i = 1; i <= valor; i++){
-			contador += (valor % i)==0 ? 1 : 0;
-		}
+	
+	if( valor !=0 )
+	{
+	     for (i = 1; i <= valor; i++)
+	     {
+		  contador += (valor % i)==0 ? 1 : 0;
+	     }
 	}
 	return contador;
 }
